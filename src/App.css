@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden !important;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sky {
+  background: #246e89
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/bg_sky.jpg") repeat-x
+    100% 100% / auto 100%;
+  top: 0;
+  height: 50vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.eagleDiv {
+  position: absolute;
+  width: 20vw;
+  top: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.eagleDiv > img {
+  width: 20vw;
+  /* top: "-100%"; */
 }
-
-.App-link {
-  color: #61dafb;
+.grass {
+  background: #81b429
+    url("https://lh3.googleusercontent.com/proxy/P9mnstq3fGx_xZ7A8Z6ZTM2WhhguDXQiLACnKujw1SWQhcQHOYxwUcnQ3xlTeIHt6_XYZu9y6pA7uU_AVUAwTwPAILz4uV0GlgxiPQf486MuzDYe4znQpBHM2zQa")
+    repeat-x 100% 100% / auto 100%;
+  height: 50vh;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.rabbitDiv {
+  position: absolute;
+  width: 10vw;
+  bottom: 10%;
+}
+.rabbitDiv > img {
+  width: 10vw;
+}
+.bush {
+  position: absolute;
+  bottom: 5vh;
+  right: 5vw;
+  width: 15vw;
+  color: #81b429;
 }
